@@ -15,7 +15,6 @@ namespace ServerApp
             //Trigger the method PrintIncomingMessage when a packet of type 'Message' is received
             //We expect the incoming object to be a string which we state explicitly by using <string>
             NetworkComms.AppendGlobalIncomingPacketHandler<string>("Message", PrintIncomingMessage);
-            NetworkComms.AppendGlobalConnectionCloseHandler<string>()
             //Start listening for incoming connections
             Connection.StartListening(ConnectionType.TCP, new System.Net.IPEndPoint(System.Net.IPAddress.Any, 0));
 
@@ -44,3 +43,4 @@ namespace ServerApp
         }
     }
     }
+}

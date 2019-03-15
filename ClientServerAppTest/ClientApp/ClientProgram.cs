@@ -11,8 +11,13 @@ namespace ClientApp
     {
         static void Main(string[] args)
         {
+            //Solicita IP y puerto del servidor
+            Console.WriteLine("Por favor ingrese la direccion IP del servidor y puerto en el formato 192.168.0.1:10000 y presione enter:");
+            string serverInfo = Console.ReadLine();
 
-            obtenerDatosConexion().ElementAt(0);
+            //Parsea la información necesaria del string solicitado
+            string serverIP = serverInfo.Split(':').First();
+            int serverPort = int.Parse(serverInfo.Split(':').Last());
 
             //Keep a loopcounter 
             int loopCounter = 1;
@@ -23,8 +28,7 @@ namespace ClientApp
                 Console.WriteLine("Sending message to server saying '" + messageToSend + "'");
 
                 //Send the message in a single line
-                NetworkComms.SendObject("Message", obtenerDatosConexion().ElementAt(0), int.Parse(obtenerDatosConexion().ElementAt(1)), int.Parse(obtenerDatosConexion().ElementAt(2)));
-                NetworkComms.SendObject()
+                NetworkComms.SendObject("Message", serverIP, serverPort, messageToSend);
 
                 //Check if user wants to go around the loop
                 Console.WriteLine("\nPress q to quit or any other key to send another message.");
@@ -34,22 +38,6 @@ namespace ClientApp
 
             //We have used comms so we make sure to call shutdown
             NetworkComms.Shutdown();
-        }
-
-        public static List<object> obtenerDatosConexion()
-        {
-            //Solicita IP y puerto del servidor
-            Console.WriteLine("Por favor ingrese la direccion IP del servidor y puerto en el formato 192.168.0.1:10000 y presione enter:");
-            string serverInfo = Console.ReadLine();
-            
-            //Lista con datos de conexión
-            List<object> datosConLst = new List<object>();
-           
-            //Parsea la información necesaria del string solicitado
-            datosConLst.Add(serverInfo.Split(':').First());
-            datosConLst.Add(int.Parse(serverInfo.Split(':').Last()));
-            return datosConLst;
-
         }
     }
 }

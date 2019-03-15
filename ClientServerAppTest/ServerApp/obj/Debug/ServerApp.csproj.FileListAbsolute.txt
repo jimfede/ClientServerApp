@@ -1,9 +1,0 @@
-C:\Users\SALTI002\sources\repos\ClientServerApp\ClientServerAppTest\ServerApp\obj\Debug\ServerApp.csprojAssemblyReference.cache
-C:\Users\SALTI002\sources\repos\ClientServerApp\ClientServerAppTest\ServerApp\obj\Debug\ServerApp.csproj.CoreCompileInputs.cache
-C:\Users\SALTI002\sources\repos\ClientServerApp\ClientServerAppTest\ServerApp\bin\Debug\ServerApp.exe.config
-C:\Users\SALTI002\sources\repos\ClientServerApp\ClientServerAppTest\ServerApp\bin\Debug\ServerApp.exe
-C:\Users\SALTI002\sources\repos\ClientServerApp\ClientServerAppTest\ServerApp\bin\Debug\ServerApp.pdb
-C:\Users\SALTI002\sources\repos\ClientServerApp\ClientServerAppTest\ServerApp\bin\Debug\NetworkCommsDotNet.dll
-C:\Users\SALTI002\sources\repos\ClientServerApp\ClientServerAppTest\ServerApp\obj\Debug\ServerApp.csproj.CopyComplete
-C:\Users\SALTI002\sources\repos\ClientServerApp\ClientServerAppTest\ServerApp\obj\Debug\ServerApp.exe
-C:\Users\SALTI002\sources\repos\ClientServerApp\ClientServerAppTest\ServerApp\obj\Debug\ServerApp.pdb
