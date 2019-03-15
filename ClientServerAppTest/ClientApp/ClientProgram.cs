@@ -29,7 +29,7 @@ namespace ClientApp
 
                 //Send the message in a single line
                 NetworkComms.SendObject("Message", serverIP, serverPort, messageToSend);
-
+      
                 //Check if user wants to go around the loop
                 Console.WriteLine("\nPress q to quit or any other key to send another message.");
                 if (Console.ReadKey(true).Key == ConsoleKey.Q) break;
